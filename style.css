@@ -1,0 +1,13 @@
+#bigformbox {
+	width: 100%;
+}
+#formbox {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#formbox form {
+	font-family: Sans-Serif, Arial, Georgia; 
+	font-size: 30px;
+}
