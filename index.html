@@ -1,142 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/scrolling-nav.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <title>Scarlett Wu</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script>
+        <script src = "assets/js/script.js"></script>
     </head>
+    <body>
 
-    <body class="bg">
-        <nav id="mainNav" class="transparent nav-default navbar-inner navbar navbar-fixed-top affix-top">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="bs-example-navbar-collapse-1" class="navbar-inner navbar-collapse row bg-white collapse in" aria-expanded="true" style="">
-                <ul class="animated fadeInUp nav navbar-right col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                    <li class="home active">
-                        <a href="#home" class="navbar-css page-scroll">home</a>
-                    </li>
-                    <li class="about">
-                        <a href="#about" class="navbar-css page-scroll">about</a>
-                    </li>
-                    <li class="icons">
-                        <a href="#projects" class="navbar-css page-scroll">projects</a>
-                    </li>
-                    <li class="contact">
-                        <a href="#contact" class="navbar-css page-scroll">contact</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Sidebar Hamburger Icon -->
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <ul>
+              <li class="sidebar-item">Home</li>
+              <li class="sidebar-item">Name</li>
+              <li class="sidebar-item">Major</li>
+              <li class="sidebar-item">Fact</li>
+            </ul>
         </nav>
 
-        <section id="home">
-            <div class="container-fluid">
-                <div class="row image-wrapper"> 
-                    <img class="img-responsive" src="assets/images/mmBG.jpg">
-                    <div class="text-container">
-                        <p class="animated fadeInUp">If you can dream it, you can do it. -Walt Disney</p>
-                    </div>
+        <!-- Page Wrapper, Consisting of All the Sections -->
+        <div class = "page-wrapper">
+            <!-- Name and Intro Section -->
+            <section class = "section" id = "name-section">
+                <div class = "text" id = "name-text">
+                  <div id="text-line">Hi, I'm Scarlett. </div>
+                  <div id="text-line">I create. </div>
+                  <div id="text-line">I inspire. </div>
+                  <div id="text-line">I contribute. </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <!-- Major Section -->
+            <section class = "section" id = "about-section">
+                  <div class = "text">
+                    The chat box look goes here
+                    <div class="text">
+                    The text goes here
+                    </div>
+                  </div>
+                  <div class = "text">
+                    Pictures of myself and what I like go here.
+                  </div>
+                  <div class="text">
+                    Link to resume--remove address from this (pdf)
+                  </div>
+            </section>
 
-        <section id="about">
-        <div class="container-fluid">
-            <div class="row">   
-                <div class="bg remove-pad col-sm-6 col-xs-12"> <br></br>
-                    <div class="center-block text-container">
-<!--                         <a id="about"></a>
- -->
-                        <h2>ABOUT</h2>
-                        
-                        I am a third year Cognitive Science major, Computer Science minor hoping to work in Web Design, UX/UI Design, or Front End Development. 
-                        I was born and raised in the Bay Area, in the small but adorable island of Alameda, CA.
-                        <br></br>
-                        <ul>
-                            <li>Interest in traveling and learning new cultures</li>
-                            <li>Dances for fun. Low key wants to sing and dance at all times</li>
-                            <li>Loves to relax on a worn couch reading a book and/or watching How I Met Your Mother or Friends</li>
-                            <li>Takes long walks on the beach to admire the waters and feel the sand between my toes</li>
-                            <li>Rereads corny and/or cheesy scenes in books</li>
-                            <li>Life goal is to travel and eat</li>
-                        </ul>
+            <!-- Carousel and Projects Section -->
+            <section class = "section" id = "carousel-section">
+                <div class = "carousel-container">
+                  <div id="carousel">
+                    <div class="carousel-item">
+                      <div class="quote"> It's kind of fun to do the impossible.
+                        <div class="author">Walt Disney</div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="quote"> Try not to become a man of success but rather try to become a man .of value
+                        <div class="author">Albert Einsteins</div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="quote"> You can't cross the sea merely by standing and staring at the water.
+                        <div class="author">Rabindranath Tagore</div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="quote"> Live as if you were to die tomorrow; learn as if you were to live forever.
+                        <div class="author">Gandhi</div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="quote"> I haven't failed. I've just found 10,000 ways that won't work.
+                        <div class="author">Thomas Edison</div>
+                      </div>
+                    </div>
+
+                  </div>                    <div id="carousel-prev">
+                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+                    </div>
+                    <div id="carousel-next">
+                        <img class="img-scaled" src="assets/img/arrowright.png" />
                     </div>
                 </div>
-                <div class="remove-pad col-sm-6 col-xs-12">
-                    <img class="img-responsive" src="assets/images/about_image.jpg">
+            </section>
+
+            <!-- Contact Section -->
+            <section class = "section" id = "fact-section">
+                <div class = "text" id = "fact-text">
+                  Find me on FB, LinkedIn. <br>
+                  Follow me on my joint travel blog (Coming soon)
                 </div>
-            </div>
+            </section>
+
         </div>
-    </section>
-
-    <section id="projects">
-        <div id="mycarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#mycarousel" data-slide-to="1"></li>
-                <li data-target="#mycarousel" data-slide-to="2"></li>
-            </ol>
-
-<!--             <a name="projects"></a>
- -->            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="assets/images/bg1.jpg" data-color="lightblue" alt="First Image">
-                    <div class="carousel-caption">
-                        <h3 class="animated fadeInUp">First Image</h3>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="assets/images/bg2.jpg" data-color="firebrick" alt="Second Image">
-                    <div class="carousel-caption">
-                        <h3 class="animated fadeInUp">Second Image</h3>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="assets/images/bg3.jpg" data-color="violet" alt="Third Image">
-                    <div class="carousel-caption">
-                        <h3>Third Image</h3>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
-        </div>
-    </section>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="assets/js/jquery.easing.js"></script>
-        <script src="assets/js/scrolling-nav.js"></script>
-
     </body>
 </html>
-
-
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
- <script type="text/javascript" src="assets/js/js_portion.js"></script>
-
- <canvas id="background"></canvas> this needs to be before javascript b/c canvas needs to load before stuff can be done on it
- <div id="bigformbox">
-<div id="formbox">
- <form> Enter your name: <br>
- 	<input type="text" id="yourname">
- 	<br> 
- </form>
-
- <button type="button" id="enter_button">Enter</button>
-</div>
-</div> -->
