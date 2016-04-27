@@ -1,11 +1,9 @@
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
+@-webkit-keyframes fadingIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-/* Standard syntax */
-@keyframes example {
+@keyframes fadingIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -23,14 +21,14 @@
 }
 
 .text-line {
-	opacity: 0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
+	opacity: 0;  
+	-webkit-animation: fadeIn ease-in 1;  
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
 
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
-    animation-name: example;
+    -webkit-animation-name: fadingIn; 
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadingIn;
     animation-duration: 1.5s;
 
    	-webkit-animation-fill-mode: forwards; 
