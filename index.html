@@ -9,8 +9,8 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,800,600,500' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
         <script src = "assets/js/script.js"></script>
     </head>
     <body>
@@ -18,7 +18,7 @@
         <!-- Sidebar -->
       <div id="nav">
         <div class="container">
-          <div id="nav-title"><a href="#">Scarlett Wu</a></div>
+          <div id="nav-title">Scarlett Wu</div>
           <div id="nav-item-container">
             <div id="nav-about" class="nav-item">About</div>
             <div id="nav-projects" class="nav-item">Projects</div>
@@ -35,10 +35,11 @@
             <section id = "home-section" class = "section" >
               <div class="image-container"><img src="assets/img/write-banner.jpg"></div>
               <div class = "text" id = "home-text">
-                <div id="header-text"><h1>Hi, I'm Scarlett.</h1> </div>
-                <div id="text-line">I create. </div>
-                <div id="text-line">I inspire. </div>
-                <div id="text-line">I contribute. </div>
+                <div class="text-line header-text"><h1>Hi, I'm Scarlett.</h1> </div>
+                <div class="text-line line2">I create. </div>
+                <div class="text-line line3">I inspire. </div>
+                <div class="text-line line4">I contribute. </div>
+                <div class="text-line line5 down-arrow"><img src="assets/img/down-arrow.png"></div>
               </div>
             </section>
 
@@ -46,48 +47,67 @@
             <section class = "section" id = "about-section">
               <div class="about-top">
                   <div class="about-item">
-                    <img id="circle-image" src="assets/img/profile.jpg"> 
+                    <img class="circle-image" src="assets/img/profile.jpg"> 
                   </div>
 
                   <div class="aboutitem2 hidden-box">
-                    [[Text about self goes here]]
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu leo porta ipsum ultrices sagittis. Fusce accumsan lectus malesuada, lacinia urna eget, condimentum nibh. Cras fringilla vitae leo sit amet aliquet. Maecenas tempor sapien in orci viverra efficitur. Phasellus erat dolor, aliquet in tellus ut, porta suscipit erat. Morbi nec nulla in metus mattis sagittis. Donec tempor, tellus nec imperdiet lacinia, nisl neque viverra quam, et efficitur lorem odio et augue. Suspendisse a porta sem, quis pretium leo. Curabitur pulvinar volutpat accumsan. Curabitur vulputate odio urna, ac faucibus tortor venenatis sit amet. Integer blandit velit a lacinia pharetra. Curabitur pharetra ullamcorper finibus.
                   </div>
               </div>
               <div class="about-bottom">
                 <div class="about-item3">
-                  <button id="resume-button"> View Resume </button>
-                </div>
+<!--                   <button id="button"> View Resume </button>
+ -->                </div>
 
                 <div class="about-item4 image-wrapper">
-                  <div class= "image-box" style="">first image</div>
-                  <div class= "image-box" style="">second image</div>
-                  <div class= "image-box" style="">third image</div>
-                  <div class= "image-box" style="">fourth image</div>
-                  <div class= "image-box" style="">fifth image</div>
-                  <div class= "image-box" style="">sixth image</div>
-                  <div class= "image-box" style="">seventh image</div>
-                  <div class= "image-box" style="">eighth image</div>
-                  <div class= "image-box" style="">ninth image</div>
-                  <div class= "image-box" style="">tenth image</div>
+                  <div class= "image-box" style=""><img src="assets/img/food.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/book.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/food.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/book.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/food.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/book.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/food.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/book.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/food.jpg"></div>
+                  <div class= "image-box" style=""><img src="assets/img/book.jpg"></div>
                 </div>
               </div>
             </section>
 
             <!-- Carousel and Projects Section -->
             <section class="section" id="projects-section">
-<!--               <div class="projects-wrapper">
- -->                <div class="project-box box1"><div class="box-text">Web <br> Design</div></div>
+              <div class="projects-wrapper">
+                <div class="project-box box1"><div class="box-text">Web <br> Design</div></div>
                 <div class="project-box box2"><div class="box-text">UX/UI <br> Design</div></div>
                 <div class="project-box box3"><div class="box-text"> Back End <br> Coding </div></div>
-<!--               </div>
- -->            </section>
+              </div>
+            </section>
 
             <!-- Contact Section -->
             <section class = "section" id = "contact-section">
-                <div class = "text" id = "fact-text">
-                  Find me on FB, LinkedIn. <br>
-                  Follow me on my joint travel blog (Coming soon)
-                </div>
+              <div class="contact-title"> Contact me for more info or just to say hi! </div>
+              <div class="contact-info">
+                <form id="contact_form">
+                  <div class="contact-row">
+                    <label for="name">Your name:</label><br>
+                    <input id="name"><br>
+                  </div>
+                  <div class="contact-row">
+                    <label for="email">Your email:</label><br>
+                    <input id="email"><br>
+                  </div>
+                  <div class="contact-row">
+                    <label for="message">Your message:</label><br>
+                    <textarea id="message" class="input"></textarea><br>
+                  </div><br>
+                    <button id="button"> Send Message </button>
+                </form>   
+              </div>
+              <div class="projects-wrapper">
+                <div class="icon-box icon1"><img src="assets/img/facebook.png"></div>
+                <div class="icon-box icon2"><img src="assets/img/linkedin.png"></div>
+                <div class="icon-box icon3"><img src="assets/img/gmail.png"></div>
+              </div>
             </section>
 
         </div>
