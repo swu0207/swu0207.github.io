@@ -7,101 +7,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,800,600,500' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script>
         <script src = "assets/js/script.js"></script>
     </head>
     <body>
 
-        <!-- Sidebar Hamburger Icon -->
-        <div id = "sidebar-button">
-            <a id="nav-toggle">
-                <span></span>
-            </a>
-        </div>
-
         <!-- Sidebar -->
-        <nav class = "sidebar-container">
-            <ul>
-              <li class="sidebar-item">Home</li>
-              <li class="sidebar-item">Name</li>
-              <li class="sidebar-item">Major</li>
-              <li class="sidebar-item">Fact</li>
-            </ul>
-        </nav>
+      <div id="nav">
+        <div class="container">
+          <div id="nav-title"><a href="#">Scarlett Wu</a></div>
+          <div id="nav-item-container">
+            <div id="nav-about" class="nav-item"><a href="#about-section">About</a></div>
+            <div id="nav-projects" class="nav-item"><a href="#carousel">Projects</a></div>
+            <div id="nav-contact" style="padding-right: 24px;" class="nav-item"><a href="#contact-section">Contact</a></div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
 
         <!-- Page Wrapper, Consisting of All the Sections -->
         <div class = "page-wrapper">
             <!-- Name and Intro Section -->
-            <section class = "section" id = "name-section">
-                <div class = "text" id = "name-text">
-                  <div id="text-line">Hi, I'm Scarlett. </div>
-                  <div id="text-line">I create. </div>
-                  <div id="text-line">I inspire. </div>
-                  <div id="text-line">I contribute. </div>
-                </div>
+            <section id = "home-section" class = "section" >
+              <div class="image-container"><img src="assets/img/write-banner.jpg"></div>
+              <div class = "text" id = "home-text">
+                <div id="header-text"><h1>Hi, I'm Scarlett.</h1> </div>
+                <div id="text-line">I create. </div>
+                <div id="text-line">I inspire. </div>
+                <div id="text-line">I contribute. </div>
+              </div>
             </section>
+
             <!-- Major Section -->
             <section class = "section" id = "about-section">
-                  <div class = "text">
-                    The chat box look goes here
-                    <div class="text">
-                    The text goes here
-                    </div>
+              <div class="about-top">
+                  <div class="about-item">
+                    <img id="circle-image" src="assets/img/profile.jpg"> 
                   </div>
-                  <div class = "text">
-                    Pictures of myself and what I like go here.
+
+                  <div class="aboutitem2 hidden-box">
+                    [[Text about self goes here]]
                   </div>
-                  <div class="text">
-                    Link to resume--remove address from this (pdf)
-                  </div>
+              </div>
+              <div class="about-bottom">
+                <div class="about-item3">
+                  <button id="resume-button"> View Resume </button>
+                </div>
+
+                <div class="about-item4 image-wrapper">
+                  <div class= "image-box" style="">first image</div>
+                  <div class= "image-box" style="">second image</div>
+                  <div class= "image-box" style="">third image</div>
+                  <div class= "image-box" style="">fourth image</div>
+                  <div class= "image-box" style="">fifth image</div>
+                  <div class= "image-box" style="">sixth image</div>
+                  <div class= "image-box" style="">seventh image</div>
+                  <div class= "image-box" style="">eighth image</div>
+                  <div class= "image-box" style="">ninth image</div>
+                  <div class= "image-box" style="">tenth image</div>
+                </div>
+              </div>
             </section>
 
             <!-- Carousel and Projects Section -->
-            <section class = "section" id = "carousel-section">
-                <div class = "carousel-container">
-                  <div id="carousel">
-                    <div class="carousel-item">
-                      <div class="quote"> It's kind of fun to do the impossible.
-                        <div class="author">Walt Disney</div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="quote"> Try not to become a man of success but rather try to become a man .of value
-                        <div class="author">Albert Einsteins</div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="quote"> You can't cross the sea merely by standing and staring at the water.
-                        <div class="author">Rabindranath Tagore</div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="quote"> Live as if you were to die tomorrow; learn as if you were to live forever.
-                        <div class="author">Gandhi</div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="quote"> I haven't failed. I've just found 10,000 ways that won't work.
-                        <div class="author">Thomas Edison</div>
-                      </div>
-                    </div>
-
-                  </div>                    <div id="carousel-prev">
-                        <img class="img-scaled" src="assets/img/arrowleft.png" />
-                    </div>
-                    <div id="carousel-next">
-                        <img class="img-scaled" src="assets/img/arrowright.png" />
-                    </div>
-                </div>
-            </section>
+            <section class="section" id="projects-section">
+<!--               <div class="projects-wrapper">
+ -->                <div class="project-box box1"><div class="box-text">Web <br> Design</div></div>
+                <div class="project-box box2"><div class="box-text">UX/UI <br> Design</div></div>
+                <div class="project-box box3"><div class="box-text"> Back End <br> Coding </div></div>
+<!--               </div>
+ -->            </section>
 
             <!-- Contact Section -->
-            <section class = "section" id = "fact-section">
+            <section class = "section" id = "contact-section">
                 <div class = "text" id = "fact-text">
                   Find me on FB, LinkedIn. <br>
                   Follow me on my joint travel blog (Coming soon)

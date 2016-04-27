@@ -1,43 +1,214 @@
-/* Please read through the provided code below to understand it */
+.section {
+	width: 100%;
+	height: 960px;
+	position: relative;
+}
 
-/* QUESTION #3: PLACE SIDEBAR STYLES BELOW */
- .sidebar-container {
-	 position: fixed;
-	 width: 280px;
-	 height: 100%;
-	 background-color: black;
-	 -webkit-transform: translateX(-280px);
-	 -ms-transform: translateX(-280px);
-	 transform: translateX(-280px);
-	 -webkit-transition: all 0.3s;
-	 -moz-transition: all 0.3s;
-	 -ms-transition: all 0.3s;
-	 -o-transition: all 0.3s;
-	 transition: all 0.3s;
- }
+#home-section {
+	overflow: hidden;
+	color: rgba(200, 30, 46, 0.6);
+	background-color: #FA909A;
+}
 
- .sidebar-item {
-	 font-weight: 700;
-	 font-size: 16px;
-	 color: white;
-	 padding-top: 15px;
-	 padding-bottom: 15px;
-	 padding-left: 20px;
-	 padding-right: 20px;
- }
+#about-section {
+	background-color: #FFBE92;
+	color: black;
+	overflow: hidden;
+}
 
-/* QUESTION #4: PLACE CAROUSEL STYLES BELOW */
+#circle-image {
+	height: 400px;
+	border-radius: 50%;
+    transition: linear 0.2s;
+/*    border: 5px solid white;
+*/}
+
+.circle-image-border {
+	border: 15px solid white;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: linear 0.2s;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hidden-box {
+	text-align: center;
+	vertical-align: center;
+	position: absolute;
+	left: calc(55% - 120px);
+	top: calc(22.5%);
+	background: white;
+	width: 600px; 
+	height: 350px;
+	border-radius: 25px;
+	transition: linear 0.4s;
+	box-shadow: 0px 0px 5px #edeae5;
+	opacity: 0;
+
+}
+
+.hidden-box-active {
+	opacity: 1;
+    transform: translateX(20px);
+}
+
+
+#projects-section {
+	position: relative;
+	background-color: #FA909A;
+	z-index: 10;
+}
+
+.project-wrapper {
+	position: relative;
+}
+
+.box1 {
+    top: 12%; 
+    left: 8%;
+}
+
+.box2 {
+    top: 12%; 
+    left: 38%;
+}
+
+.box3 {
+    top: 12%; 
+    left: 68%;
+}
+
+.box-text {
+	margin-top: 100%;
+	text-align: center;
+	font-weight: 700;
+	font-size: 45px;
+	letter-spacing: 5px;
+	color: #F76A77;
+}
+
+.project-box {
+	height: 720px; 
+	width: 400px; 
+	position: absolute;
+	margin: auto;
+	background-color: #FDBCC2;
+	display: inline-block;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.project-box:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#carousel-section {
+	top: 0;
+	background-color: white;
+	z-index: 1;
+}
+
+.about-item {
+	position: absolute;
+	top: 20%;
+	left: 12.5%;
+}
+.about-item3 {
+	position: absolute;
+	top: 70%;
+	left: 16%;
+}
+
+.about-item4 {
+	position: absolute;
+	top: 79.5%;
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+}
+
+.image-wrapper {
+	width: auto;
+	height: 200px;
+    overflow-x: scroll;	
+    overflow-y: hidden; 
+    white-space: nowrap;
+    display: flex;
+}
+
+.image-box {
+	height: 200px; 
+	width: 200px; 
+	background-color: #FFD8BD;
+	display: inline-block;
+	border: 1px dotted white;
+    text-align: center;
+    overflow: scroll;	
+}
+
+.image-box:hover {
+	opacity: 0.7;
+}
+
+#resume-button {
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+   	background-color: #E34655;
+}
+
+#resume-button:hover {
+	background-color: #C81E2E;
+	cursor: pointer;
+}
+
+.about-item-active {
+	border: 4px solid ;
+}
+#contact-section {
+	background-color: #FFA96E;
+}
+
+#header-text {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+}
+
+#fact-text {
+	color: black;
+}
+
+.image-container {
+	opacity: 0.7;
+}
+
+/* Carousel Styling */
+
 .carousel-container {
 	width: 960px;
 	margin: auto;
-	height: 500px;
+	height: 1000px;
 	overflow: hidden;
 	position: relative;
 }
 
 #carousel {
 	width: 4800px;
-	height: 100%;
+	height: 80%;
 	margin-left: 0px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -54,111 +225,69 @@
 	text-align: center;
 }
 
-/* QUESTION #5: PLACE "OTHER CSS" STYLES BELOW */
-.section {
-	width: 100%;
-	height: 500px;
-	position: relative;
-}
-
-#name-section {
-	background-color: #2bde73;
-}
-
-#major-section {
-	background-color: #8bb2af;
-}
-
-#fact-section {
-	background-color: #fff;
-}
-
-#fact-text {
-	color: black;
-}
-
-/* DOCUMENT SET UP */
-
 body, html {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	min-width: 960px;
+	min-width: 900px;
 	background-color: black;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	font-family: Lato;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
 	text-decoration: none;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#nav {
+	position: fixed;
+    background: rgba(227, 70, 85, 0.7);
+    color: white;
+    width: 100%;
+    z-index: 100;
+}
+
+#nav .container {
+    padding: 14px 0px;
+}
+
+#nav-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    float: left;
+    line-height: 24px;
+    padding-left: 24px;
+}
+
+#nav-item-container {
+    float: right;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
-.img-scaled {
-	width: 100%;
-	height: 100%;
+.nav-item {
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-left: 48px;
+    font-weight: 300;
 }
 
-.img-scaled-wh {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-/* YOU DON'T NEED TO UNDERSTAND THE CODE BELOW */
-
-#nav-toggle {
-	position: absolute;
-	left: 50%; top: 50%;
-}
-
-#nav-toggle {
-	padding: 10px 30px 15px 0px;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	height: 3px;
-	width: 30px;
-	background: #fff;
-	position: absolute;
-	display: block;
-	content: '';
-}
-
-#nav-toggle span:before {
-	top: -10px;
-}
-
-#nav-toggle span:after {
-	bottom: -10px;
-}
-
-/* FREEBIES */
-
-/* Styling the Sidebar Button */
-#sidebar-button {
-	position: fixed;
-	z-index: 100;
-	left: 15px;
-	top: 15px;
+.nav-item:hover {
 	cursor: pointer;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-}
-
-/* Overriding default styles on the ul */
-.sidebar-container ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	margin-top: 10px;
 }
 
 .page-wrapper {
@@ -200,11 +329,37 @@ a {
 }
 
 /* Styling for the quotes and text in each section */
-.quote, .text {
+.text {
+	opacity: 1;
 	position: absolute;
 	font-size: 36px;
+	font-weight: 500;
+    top: 50%;
+    left: 25%;
+    z-index: 2;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+.about-text {
+	opacity: 1;
+	position: absolute;
+	font-size: 36px;
+	font-weight: 500;
+    top: 50%;
+    left: 40%;
+    z-index: 2;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+.project {
 	color: white;
-	font-weight: 700;
+	position: absolute;
+	font-size: 36px;
+	font-weight: 600;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -212,30 +367,43 @@ a {
    	transform: translateX(-50%) translateY(-50%);
 }
 
-/* Styling for the author text in each quote */
-.author {
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: .2rem;
-	text-transform: uppercase;
-	margin-top: 10px;
-	text-align: center;
+
+@media(max-width: 600px) {
+	#nav {
+	    color: white;
+	    width: 100%;
+	    z-index: 1;
+	    float: none;
+	}
+
+	#nav .container {
+	    padding: 14px 0px;
+	    float: none;
+	    width: 100%;
+	}
+
+	#nav-title {
+		display: block;
+	    text-align: center;
+	    float: none;
+	}
+
+	.nav-item-container {
+		display: block;
+		text-align: center;
+		float: none;
+	}
+
+	.nav-item {
+	    display: block;
+	    text-align: center;
+	    width: 100%;
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    margin-top: 5px;
+	    margin-right: 100px;
+	    margin-left: 0px;
+
+	}
 }
 
-/* jQuery Manipulation Classes */
-
-.no-scroll {
-	overflow: hidden;
-}
-
-.wrapper-active, .button-active {
-	-webkit-transform: translateX(280px);
-	-moz-transform: translateX(280px);
-	transform: translateX(280px);
-}
-
-.sidebar-active {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
-}

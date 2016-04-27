@@ -1,40 +1,37 @@
 $(document).ready(function() {
 
-  // QUESTION 6
+  /* Add border when hover */ /* Fix sharpness if have time */
+    $('#circle-image').hover(function() {
+      setTimeout(function(){
+        $('#circle-image').addClass('circle-image-border');
+      }, 100);
+      }, function() {
+      $('#circle-image').removeClass('circle-image-border');
+    });
 
-  //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
-  $('#sidebar-button').click(function(){
-    if($('.sidebar-container').hasClass('sidebar-active')) {
-        $('body').removeClass('no-scroll');
-			  $('#sidebar-button').removeClass('button-active');
-			  $('.sidebar-container').removeClass('sidebar-active');
-			  $('.page-wrapper').removeClass('wrapper-active');
-		} else {
-        $('#sidebar-button').addClass('button-active');
-        $('.sidebar-container').addClass('sidebar-active');
-        $('.page-wrapper').addClass('wrapper-active');
-        setTimeout(function() {
-          $('body').addClass('no-scroll');
-        }, 300);
-		}
-  });
+    /* Textbook appear on click*/
+  
+    $('#circle-image').click(function(){
+      if ($('.hidden-box').hasClass('hidden-box-active')) {
 
-  // QUESTION 7
+        $('.hidden-box').removeClass('hidden-box-active');
+        setTimeout(function(){
+          $('.hidden-box').hide();
+        }, 400);
+        
+      } else {
+        $('.hidden-box').show();
+        setTimeout(function(){
+          $('#circle-image').addClass('circle-image-border');
+          $('.hidden-box').addClass('hidden-box-active');
+        }, 0);
+      }
+      
+    });
 
-  //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
 
-  $('.page-wrapper').click(function(){
-    if($('.sidebar-container').hasClass('sidebar-active')) {
-        $('body').removeClass('no-scroll');
-			  $('#sidebar-button').removeClass('button-active');
-			  $('.sidebar-container').removeClass('sidebar-active');
-			  $('.page-wrapper').removeClass('wrapper-active');
-		}
-  });
 
-  // QUESTION 8
-
-  //Implement the "slide to left" when the user clicks on #carousel-next here
+  /* Carousel for displaying projects (Probably not implemented atm) */
   $('#carousel-next').click(function(){
     var currentMargin = parseInt($('#carousel').css('margin-left').replace("px", ""));
     // console.log(currentMargin);
@@ -47,8 +44,6 @@ $(document).ready(function() {
     }
   });
 
-
-  //Implement the "slide to right" when the user clicks on #carousel-prev here
   $('#carousel-prev').click(function(){
     var currentMargin = parseInt($('#carousel').css('margin-left').replace("px", ""));
     // console.log(currentMargin);
@@ -61,10 +56,29 @@ $(document).ready(function() {
     }
   });
 
+  /* Navbar Scrolling */
 
-  //THIS IS NOT A REQUIRED QUESTION
-  // EXTRA FOR EXPERTS
+  $("#nav-title").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+  /* http://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript-jquery */
 
-  // Implement a "smooth scroll" when the user clicks on the sidebar links here
+  /* Scroll to sections */
+    $("#nav-about").click(function() {
+    $("html, body").animate({ scrollTop: $("#about-section").offset().top }, 500);
+    return false;
+  });
+
+    $("#nav-projects").click(function() {
+    $("html, body").animate({ scrollTop: 1920 }, 500);
+    return false;
+  });
+
+    $("#nav-contact").click(function() {
+    $("html, body").animate({ scrollTop: 2980 }, 500);
+    return false;
+  });
+
 
 });
