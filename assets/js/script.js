@@ -66,7 +66,7 @@ $(document).ready(function() {
 
   /* Scroll to sections */
     $("#nav-about").click(function() {
-    $("html, body").animate({ scrollTop: $("#about-section").offset().top }, 500);
+    $("html, body").animate({ scrollTop: 960 }, 500);
     return false;
   });
 
