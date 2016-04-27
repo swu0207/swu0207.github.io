@@ -14,7 +14,7 @@
 	position: absolute;
 	font-size: 36px;
 	font-weight: 500;
-    top: 40%;
+    top: 42%;
     left: 25%;
     z-index: 2;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -56,6 +56,7 @@
 	animation-delay: 2.7s;
 }
 .line4 {
+
 	padding-left: 100px;
 	-webkit-animation-delay: 3.7s;
 	-moz-animation-delay: 3.7s;
@@ -64,19 +65,17 @@
 
 .line5 {
 	position: absolute;
-	left: 55%;
+	left: 100%;
 	height: 100px;
 	width: 100%;
 	filter: invert(100%);
    	-webkit-filter:invert(100%);
-
    	-webkit-animation-delay: 4.7s;
 	-moz-animation-delay: 4.7s;
 	animation-delay: 4.7s;
 }
 
 .line5:hover {
-	height: 105px;
 	transition: linear 0.2s;
 	cursor: pointer;
 	 transform: translateY(15px);
@@ -432,7 +431,7 @@ img {
 	display: inline-block;
     text-align: center;
    	filter: invert(100%);
-   	-webkit-filter:invert(90%);
+   	-webkit-filter:invert(100%);
 }
 
 .icon-box:hover {
