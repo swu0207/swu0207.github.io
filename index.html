@@ -5,44 +5,68 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <link rel="icon" href="assets/img/favicon.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:500,500i,700" rel="stylesheet">
+        <link rel="icon" href="assets/img/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500,500i,700, 700i" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-
-    	<!-- Navigation Bar -->
-		<div>
-    	</div>
-
-    	
 		<div class="container-fluid">
+	    	<!-- Navigation Bar -->
+			<div class="row row-centered">
+				<div class="col-lg-8 col-centered">
+					<div class="nav">
+						<ul>
+							<li id="home-button">.home</li> ||
+							<li id="about-button">.about</li> ||
+							<li id="design-button">.design</li> ||
+							<li id="prog-button">.programming</li>
+						</ul>
+					</div>
+				</div>
+	    	</div>
+
 			<!-- Home lightbulb section -->
-			<div class="row">
-				<div class="col-lg-12">
+			<div id="home" class="row row-centered">
+				<div class="col-lg-8 col-centered">
 					<div class="home-section section">
 						<div class="svg-image"><img id="lightbulb" src="assets/img/lightbulb.svg"></div>
+						<div class="about">
+							<span id="home-name"></span>
+							<span id="home-goal"></span>
+							<span id="home-likes"></span>
+						</div>
 					</div>
 				</div>
 			</div>
 
     		<!-- About section -->
-			<div class="row">
-				<div class="col-lg-12">
+			<div id="about" class="row row-centered">
+				<div class="col-lg-8 col-centered">
 					<div class="about-section section">
+						<h2>.about</h2>
 						<div class="about-image"><img class="circle-image" src="assets/img/profile.jpg"> </div>
 						<!-- Make the lightbulb get smaller as the screen gets smaller. Keep current size as the biggest -->
 						<div class="about-bio">
 							<ul>
 								<li><h2>Scarlett Wu</h2></li>
-								<li>Aspiring Front-End Developer</li>
-								<li>Passionate about Education and Technology</li>
+								<li>I like Education and Technology</li>
+								<li>I love EdTech</li>
 								<li>Bay Area born and bred</li>
-								<li>Bad pun-lover</li>
-								<!-- <li>Striken with wanderlust</li> -->
-								<li><i>"There's a million things I haven't done. Just you wait."</i></li>
-								<li><a target="_blank" href="assets/files/SWU_RESUME.pdf">Resume</a></li>  
+								<li>Dreams to one day watch the Hamilton musical</li>
+								<li><i>"There's a million things I haven't done...</i></li>
+								<li style="float: right;"><i>Just you wait."</i></li>
+								<!-- <li><a target="_blank" href="assets/files/SWU_RESUME.pdf">Resume</a></li> -->  
+							</ul>
+						</div>
+						<div class="resume">
+							View my resume <a target="_blank" href="assets/files/SWU_RESUME.pdf">HERE</a>
+						</div>
+						<div class="contact-section">
+							<ul>
+								<li><a target="_blank" href=""><img id="email" src="assets/img/email.svg"></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/in/wuscarlett"><img id="linkedin" src="assets/img/linkedin.svg"></a></li>
+								<li><a target="_blank" href="https://github.com/swu0207"><img id="github" src="assets/img/github.svg"></a></li>
 							</ul>
 						</div>
 
@@ -50,93 +74,86 @@
 				</div>
 			</div>
 
-    		<!-- Education/Experience section -->
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="experience-section section">
-						<div class="education-bio">
+    		<!-- Design section -->
+			<div id="design" class="row row-centered">
+				<div class="col-lg-8 col-centered">
+					<div class="design-section section">
+						<h2>.design</h2>
+						<div class="design-bio">
 							<ul>
-								<li><h2>Education</h2></li>
-								<li>University of California, Berkeley</li>
-								<li>August 2015 - May 2017</li>
-								<li>Cognitive Science Major</li>
-								<li>Computer Science, Education Minors</li>
-							</ul>
-						</div>
-						<div class="experience-bio">
-							<ul>
-								<li><h2>Experience</h2></li>
-								<li>Front-End Development Intern</li>
-								<li>Castlery, Inc, Singapore</li>
-								<li>May 2016 - July 2016</li>
-								<li>-----</li>
-
-								<li>IT and Web Development Assistant</li>
-								<li>UC Berkeley Boalt School of Law</li>
-								<li>September 2016 - Present</li>
-								<!-- https://www.law.berkeley.edu/library.htm -->
-								<li>-----</li>
-
-								<li>Web and Administrative Assistant</li>
-								<li>UC Berkeley Haas School of Business</li>
-								<li>March 2016 - Present</li>
-								<!-- http://socialsector.haas.berkeley.edu/ -->
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-textchange.png">
+										<!-- <div class="pic-info">
+											<p>Textchange</p>
+										</div> -->
+											<h1>Textchange</h1>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-instahealth.png">
+											<h1>Instahealth</h1>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-asuc.png">
+											<h1>ASUC</h1>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 
-    		<!-- Projects section -->
-			<!-- <div class="row">
-				<div class="col-lg-12">
-					<div class="experience-section section">
-						<div class="experience-bio">
+    		<!-- Programming section -->
+			<div id="prog" class="row row-centered">
+				<div class="col-lg-8 col-centered">
+					<div class="prog-section section">
+						<h2>.programming</h2>
+						<div class="prog-bio">
 							<ul>
-								<li><h2>Projects</h2></li>
-								<li>University of California, Berkeley</li>
-								<li>August 2015 - May 2017</li>
-								<li>Cognitive Science Major</li>
-								<li>Computer Science, Education Minors</li>
-							</ul> -->
-							<!-- Use a simple carousel here for the projects with simple circular buttons -->
-							<!-- When click on project, the screen would gently appear (still on same page) with short description. Click Read More to link to new page and that page would have better description of it -->
-							<!-- If I hopefully make InstaHealth, show whole design process in the Read More / See Process -->
-<!-- 						</div>
-
-					</div>
-
-				</div>
-			</div> -->
-
-    		<!-- Random quote section -->
-<!-- 			<div class="row">
-				<div class="col-lg-12">
-					<div class="quote-section">
-						<div class="quote">"Don't think about what could be wrong. Think about what could be right"</div>
-						<div class="quote-img"></div>
-					</div>
-				</div>
-			</div> -->
-
-    		<!-- Contact section -->
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="contact-section section">
-						<div id="quote">"Don't think about what could be wrong. Think about what could be right"</div>
-						<ul>
-							<li><a target="_blank" href=""><img id="email" src="assets/img/email.svg"></a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/wuscarlett"><img id="linkedin" src="assets/img/linkedin.svg"></a></li>
-							<li><a target="_blank" href="https://github.com/swu0207"><img id="github" src="assets/img/github.svg"></a></li>
-						</ul>
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-textchange.png">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-instahealth.png">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn-img">
+										<div class="pic-div">
+											<img src="assets/img/design-asuc.png">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
-
+		<!-- http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns --> 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 		<script src = "assets/js/script.js"></script>
+		<script src = "assets/js/typed.js"></script>
     </body>
 </html>
