@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	  $(function(){
 	      $("#home-name").typed({
-	        strings: ["<strong>Hi, I'm Scarlett^1000</strong><br>  Aspiring Web Developer^1000<br> Love me pls"],
+	        strings: ["<strong>Hi, I'm Scarlett^1000</strong><br>  Aspiring Web Developer^1000<br> Inspired to create"],
 	        typeSpeed: 20,
 	        // time before typing starts
             startDelay: 1000,
