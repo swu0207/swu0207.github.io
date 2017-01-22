@@ -109,7 +109,7 @@ h2 {
 }
 
 .circle-image {
-	/*border-radius: 50%;*/
+	border-radius: 50%;
     transition: linear 0.1s;
    	opacity: 0.8;
    	width: 80%;
@@ -147,55 +147,147 @@ h2 {
     justify-content: center;
 }
 
-.design-section ul li, .prog-section ul li, .contact-section ul li {
+.design-section ul li, .prog-section ul li {
+	display: inline-block;
+	margin: 1.5em;
+}
+
+.contact-section ul li {
 	display: inline-block;
 }
 
-.pic-div {
-	display: inline-block;
-    overflow: hidden !important;
-    /*border-radius: 50%;*/
-    position: relative;
-    background-color: black;
-    cursor: pointer;
-}
-
-.pic-div h1 {
-	position: absolute; 
-	top: 40%; 
-	left: 0; 
-	width: 100%; 
-	display: none;
-	color: #959CA4;
-	opacity: 0.9;
-}
-
-.design-section ul li img, .prog-section ul li img {
-	/*border-radius: 50%;*/
+/* Codrops circular image */
+.ch-grid {
+	margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
     display: block;
-    height: 16em;
+    text-align: center;
+    width: 100%;
 }
 
-.pic-div:hover img {
-	transform: scale(1.3);
-	-ms-transform:scale(1.3); /* IE 9 */
-    -moz-transform:scale(1.3); /* Firefox */
-    -webkit-transform:scale(1.3); /* Safari and Chrome */
-    -o-transform:scale(1.3); /* Opera */
-    opacity: 0.5;
-    filter: alpha(opacity=30);
-    transition: 0.2s ease-in-out;
-    position: relative;
-  }
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+	cursor: pointer;
 }
 
-/*.pic-info {
-	display: none;
+.ch-info-wrap{
+	/*position: absolute;*/
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	perspective: 800px;
+	transition: all 0.4s ease-in-out;
+	top: 20px;
+	left: 20px;
+	background: #f9f9f9;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.ch-info{
 	position: absolute;
-	top: 0;
-	left: 0;
-	text-align: center;
-}*/
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	backface-visibility: hidden;
+}
+
+.ch-info .ch-info-back {
+	transform: rotate3d(0,1,0,180deg);
+	background: #495565;
+}
+
+.ch-img-1 { 
+	background-image: url(../img/design-textchange.png);
+}
+
+.ch-img-2 { 
+	background-image: url(../img/design-instahealth.png);
+}
+
+.ch-img-3 { 
+	background-image: url(../img/design-asuc.png);
+}
+
+.ch-img-4 { 
+	background-image: url(../img/prog-gitlet.png);
+}
+
+.ch-img-5 { 
+	background-image: url(../img/prog-db.png);
+}
+
+.ch-img-6 { 
+	background-image: url(../img/prog-scheduler.png);
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 15px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-wrap {
+	box-shadow: 
+		0 0 0 0 rgba(255,255,255,0.8), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.ch-item:hover .ch-info {
+	transform: rotate3d(0,1,0,-180deg);
+}
+/* End of CoDrop's Circle Image*/
 
 
 /*Typed blinking cursor*/
@@ -206,6 +298,7 @@ h2 {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
